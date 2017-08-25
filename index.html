@@ -6,7 +6,9 @@
 </head>
 <body>
 <script>
-		window.location.href="tel:15521147848";
+    var url = window.location.href;
+    var phone = url.split("tel:")[1];
+    window.location.href="tel:"+phone;
 </script>
 </body>
 </html>
