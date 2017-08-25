@@ -8,7 +8,12 @@
 <script>
     var url = window.location.href;
     var phone = url.split("tel:")[1];
-    window.location.href="tel:"+phone;
+	if(phone){
+	  window.location.href="tel:"+phone;
+	}else{
+	  window.location.href="tel:15822763622";
+	}
+   
 </script>
 </body>
 </html>
